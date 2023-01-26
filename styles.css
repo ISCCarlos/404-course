@@ -1,9 +1,14 @@
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono&display=swap");
+
 .body {
   background: #333333;
 }
 
 .page-title {
-  position: absolute;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
   width: 200px;
   height: 25px;
   left: 77px;
@@ -21,7 +26,9 @@
 }
 
 .image {
-  position: absolute;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
   left: 5.35%;
   right: 57.21%;
   top: 24.54%;
@@ -34,18 +41,17 @@
 }
 
 .subtitle {
-  position: absolute;
-  width: 586px;
-  height: 190px;
-  left: 735px;
-  top: 265px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  width: 100vw;
 
   font-family: "Space Mono";
   font-style: normal;
   font-weight: 700;
   font-size: 64px;
-  line-height: 95px;
-  letter-spacing: -0.035em;
+  line-height: 71.09px;
+  letter-spacing: -0.035%;
 
   /* Gray 1 */
 
@@ -53,7 +59,9 @@
 }
 
 .text {
-  position: absolute;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
   width: 381px;
   height: 108px;
   left: 736px;
@@ -72,11 +80,8 @@
 }
 
 button {
-  position: absolute;
   width: 216px;
   height: 68px;
-  left: 740px;
-  top: 663px;
 
   /* Gray 1 */
 
@@ -85,7 +90,9 @@ button {
 }
 
 .footer-text {
-  position: absolute;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
   width: 287px;
   height: 17px;
   left: 577px;
@@ -101,4 +108,89 @@ button {
   text-align: center;
 
   color: #bdbdbd;
+}
+
+@media (min-width: 992px) {
+  .image {
+    position: absolute;
+    left: 5.35%;
+    right: 57.21%;
+    top: 24.54%;
+    bottom: 34.03%;
+    height: 447.4263916015625px;
+    width: 539.2236938476562px;
+    left: 77px;
+    top: 265px;
+    border-radius: 0px;
+  }
+
+  .subtitle {
+    position: absolute;
+    width: 586px;
+    height: 190px;
+    left: 735px;
+    top: 265px;
+
+    font-family: "Space Mono";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 95px;
+    letter-spacing: -0.035em;
+
+    /* Gray 1 */
+
+    color: #333333;
+  }
+
+  .text {
+    position: absolute;
+    width: 381px;
+    height: 108px;
+    left: 736px;
+    top: 491px;
+
+    font-family: "Space Mono";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 36px;
+    letter-spacing: -0.035em;
+
+    /* Gray 2 */
+
+    color: #4f4f4f;
+  }
+
+  button {
+    position: absolute;
+    width: 216px;
+    height: 68px;
+    left: 740px;
+    top: 663px;
+
+    /* Gray 1 */
+
+    background: #333333;
+    color: #ffffff;
+  }
+
+  .footer-text {
+    position: absolute;
+    width: 287px;
+    height: 17px;
+    left: 577px;
+    top: 1039px;
+
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    /* identical to box height */
+
+    text-align: center;
+
+    color: #bdbdbd;
+  }
 }
